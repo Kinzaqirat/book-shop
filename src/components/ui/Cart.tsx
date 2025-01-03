@@ -25,7 +25,7 @@ return (
        {totalQuantity}
       </span>
     </SheetTrigger>
-    <SheetContent className="bg-white w-full max-w-md">
+    <SheetContent className="bg-white w-full max-w-md max-sm:w-[300px]">
       <SheetHeader className="flex justify-between items-center px-4 py-2 border-b">
         <SheetTitle className="text-lg font-semibold">Your Cart</SheetTitle>
         <SheetTitle className="text-lg font-semibold">{totalQuantity}</SheetTitle>

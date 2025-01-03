@@ -29,15 +29,15 @@ export default function ProductDetails({products}:any) {
 
 
 
-<div className="font-[sans-serif] p-4 bg-gray-100">
+<div className="font-[sans-serif] p-4 bg-gray-100 max-sm:grid-cols-1">
   <div className="lg:max-w-6xl max-w-xl mx-auto">
-    <div className="grid items-start grid-cols-1 lg:grid-cols-2 gap-8 max-lg:gap-12 max-sm:gap-8">
+    <div className="grid items-start grid-cols-1 lg:grid-cols-2 gap-8 max-lg:gap-12 max-sm:gap-8 ">
       <div className="w-full lg:sticky top-0">
         <div className="flex flex-col gap-4">
-          <div className="bg-white shadow p-2">
+          <div className="bg-white shadow p-2 max-sm:w-[320px]" >
                    
 <img src={urlFor(products.thumbnail [0]).width(200).url()}
-className="w-full  aspect-[11/8] object-cover object-top"
+className="w-full  aspect-[11/8] object-cover object-top max-sm:w-[300px]" 
 alt={products.thumbnail}/>
           </div>
 

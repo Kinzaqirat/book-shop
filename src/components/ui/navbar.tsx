@@ -34,7 +34,7 @@ export default function Navbar() {
   const {totalQuantity}:any=useContext(CartContext)
   return (
     <>
- <div className="w-full h-[90px] xl:px-64 bg-white py-3  ">
+ <div className="w-full h-[90px] xl:px-64 bg-white py-3 max-sm:px-32  ">
 <div className="flex justify-between" >
 <Link href={"/"}><h1 className="text-2xl font-bold text-yellow-400">Shop</h1></Link>
 

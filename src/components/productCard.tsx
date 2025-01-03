@@ -31,15 +31,15 @@ export default async  function     ProductCard() {
     <div className="flex justify-center py-20">
       <br />
       
-  <div className="decoration-transparent  grid grid-cols-2  gap-[100px] w-[400px] h-[400px] ">
+  <div className="decoration-transparent  grid grid-cols-2  gap-[100px] w-[400px] h-[400px]  max-sm:grid-cols-1">
    {data.map((items:any,index:number)=>(
  <div className="flex justify-center">
-<Link href={`book/${items.slug.current}`}>  <img src={urlFor(items.thumbnail && items.thumbnail [0]).width(200).url()}
+<Link href={`book/${items.slug.current}`}>  <img src={urlFor(items.thumbnail && items.thumbnail [0]).url()}
 alt={items.slug}
-className=" h-[200px] rounded"
+className=" h-[200px] rounded w-[200px]"
 />
 <div className="py-3">
-<h1 className="text-black text-2xl ">{items.name}</h1>
+<h1 className="text-black text-2xl max-sm:text-[20px]  ">{items.name}</h1>
 <br />
 <button className="text-white bg-yellow-400 w-[150px] h-[50px] rounded">Veiw more..</button>
 </div>
